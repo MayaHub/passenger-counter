@@ -21,7 +21,7 @@ function save() {
   saveEl.innerText += saved;
 
   // NB: Make sure to not delete the existing content of the paragraph
-  console.log(count);
+  // console.log(count);
   reset();
 }
 
@@ -31,15 +31,9 @@ function reset() {
   // console.log(count);
 }
 
-//this doesn't work yet
-// const clearEl = document.getElementById("clear-btn");
 function done() {
   const text = "Previous entries:";
   saveEl.innerText = text;
   reset();
   // console.log("click");
 }
-
-// function test() {
-//     console.log("test");
-// }
