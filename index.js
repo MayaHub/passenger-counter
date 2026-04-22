@@ -22,19 +22,24 @@ function save() {
 
   // NB: Make sure to not delete the existing content of the paragraph
   console.log(count);
+  reset();
 }
 
 function reset() {
-count = 0;
-element.innerText = 0;
-console.log(count);
+  count = 0;
+  element.innerText = count;
+  // console.log(count);
 }
 
 //this doesn't work yet
-function clear() {
-  const saved = "Previous entries:";
-  saveEl.innerText = saved;
-  console.log(count);
+// const clearEl = document.getElementById("clear-btn");
+function done() {
+  const text = "Previous entries:";
+  saveEl.innerText = text;
+  reset();
+  // console.log("click");
 }
 
-
+// function test() {
+//     console.log("test");
+// }
